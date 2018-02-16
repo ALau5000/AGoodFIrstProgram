@@ -1,6 +1,6 @@
 public class CommentsAndSlashes {
   
-   public void static main(String[] args) {
+   public static void main(String[] args) {
    
    //Yesterday I ate a sandwich and then I went to the supermarket to buy some bread
 
