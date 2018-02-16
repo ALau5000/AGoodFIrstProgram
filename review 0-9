@@ -20,3 +20,42 @@ public class review 0-9 {
 
 Output:
 HelloWorld
+
+#2
+System.out.println("2 + 3");
+
+Output:
+2 + 3
+
+#3
+System.out.println(4 + 2);
+
+Output: 
+6
+
+#4
+//System.out.print("Hello");
+System.out.println("World");
+
+Output: 
+World
+
+#5
+System.out.print("Hello");  System.out.println("World");
+// NEVER DO THIS
+
+Output: 
+HelloWorld
+
+#6
+System.out.print("Hello"); //System.out.println("World");
+
+Linux commands:
+ls      // listing directory contents
+cd      // changing the working directory
+cd ..   // move backwards to previous directory
+mkdir   // make directory
+touch   // create empty file
+rm <file>          // remove file 
+gedit <filename> & // run gedit in the terminal background
+javac <file>.java // Compile .java file
