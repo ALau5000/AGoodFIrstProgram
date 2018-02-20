@@ -8,7 +8,7 @@ public class StillUsingVariables {
         gradYear = 2019;
         myName = "Bobby Joe";
         
-        System.out.println("My name is " + (myName) + " and I'll graduate in " + (gradYear) + ".");
+        System.out.println("My name is " + myName + " and I'll graduate in " + gradYear + ".");
         
     }
 }
