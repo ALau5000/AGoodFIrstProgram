@@ -6,7 +6,7 @@ public class NumbersAndMath {
         System.out.println("Now let's see how much I can drink:");
         System.out.println("*slurpslurpslurp*      " + (100000/10000) + " bottles of coke!");
         System.out.println("And finally my favourite, which is dessert:");
-        System.out.println("*NOMNOMNOMNOMNOM*      " + ((3 + 5) / (1 + 2 + 5 - 2 - 1 + 3)) + " cupcake!");
+        System.out.println("*NOMNOMNOMNOMNOM*      " + (3 + 5) / (1 + 2 + 5 - 2 - 1 + 3) + " cupcake!");
         System.out.println("I'm just curious, is 5 bigger than 1000?  " + (5 > 1000));
         System.out.println("Oh, I see, then 5 must be bigger than 543678. Is it?");
         System.out.println("Are you okay buddy? It's " + (5 > 543678));
