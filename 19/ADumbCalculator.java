@@ -7,6 +7,8 @@ public class ADumbCalculator {
 		Scanner input = new Scanner(System.in);
 
 		System.out.println("Hey there, what's up?");
+		System.out.println();
+		
 		System.out.print("Can you give me an integer? ");
 		int firstNumber = input.nextInt();
 
