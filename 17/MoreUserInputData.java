@@ -26,6 +26,7 @@ public class MoreUserInputData {
         
         System.out.print("Average: ");
         double averageMark = input.nextDouble();
+	System.out.println();
         
         System.out.println("REQUIRED: Fill out all the information below with no errors (VERY IMPORTANT!)");
         
@@ -43,7 +44,8 @@ public class MoreUserInputData {
         
         System.out.print("Your Password: ");
         String passwordForGame = input.next();
-        
+        System.out.println();
+				   
         System.out.println("Your Information: ");
         System.out.println("    Name: " + lastName + ", " + firstName);
         System.out.println("    Grade: " + grade);
@@ -55,6 +57,7 @@ public class MoreUserInputData {
         System.out.println("    Video Game: " + favouriteGame);
         System.out.println("    Username: " + usernameForGame);
         System.out.println("    Password: " + passwordForGame);
+	System.out.println();
         
         System.out.println("Thank you for your cooperation and understanding in this matter!");
         
