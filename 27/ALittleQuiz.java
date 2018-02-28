@@ -10,7 +10,7 @@ public class ALittleQuiz {
 		
 		System.out.println("Hey you! Are you ready for a quiz?");
 		System.out.println("Even if you said no, too bad! ");
-		System.out.println("(When you type in your answer, type in the number for your answer.)");
+		System.out.println("(When you type in your answer, type in the number of your answer.)");
 		System.out.println();
 		
 		System.out.println("Q1) What is Obama's Last Name?");
@@ -27,13 +27,13 @@ public class ALittleQuiz {
 			System.out.println("NICE!!! That's correct!");	
 			score += 1;
 		}	else  {
-			System.out.println("WRONG ANSWER!");
+			System.out.println("WRONG ANSWER! The correct answer is Obama.");
 		}
 		
 		System.out.println();
-		System.out.println("Q2) What is 3/3 + 2 + 24/4 - 6*3?");
+		System.out.println("Q2) What is 3/3 + 2 + 24/4 - 6*3? (Hint: BEDMAS)");
 		System.out.println("		1) 5.5					 ");
-		System.out.println("		2) 3					 ");
+		System.out.println("		2) -9					 ");
 		System.out.println("`		3) 12					 ");
 		System.out.println();
 		
@@ -45,7 +45,7 @@ public class ALittleQuiz {
 			System.out.println("Thats right! I'm impressed, I couldn't even figure the answer out until I asked my mommy.");
 			score += 1;
 		} else {
-			System.out.println("You should work on your math a bit more because your dead wrong!");
+			System.out.println("You should work on your math a bit more because the answer is 3!");
 		}
 		
 		System.out.println();
@@ -63,7 +63,7 @@ public class ALittleQuiz {
 			System.out.println("Well done! You sure know your colours.");
 			score += 1;
 		} else {
-			System.out.println("Sorry, but you got it wrong. :( ");
+			System.out.println("Sorry, but you got it wrong. Red and Green mix to make yellow.");
 		}
 		
 		System.out.println();
@@ -71,3 +71,4 @@ public class ALittleQuiz {
 		System.out.println("Thank you very much for playing!");
 	}
 }
+
