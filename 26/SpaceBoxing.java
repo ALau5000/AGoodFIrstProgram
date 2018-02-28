@@ -11,8 +11,8 @@ public class SpaceBoxing {
 	System.out.println();
 
 	System.out.println("I have information for the following planets:");
-	System.out.println("	1. Venus    2. Mars    3.Jupiter		 ");
-	System.out.println("	4. Saturn   5. Uranus  6. Neptune		 ");
+	System.out.println("	1. Venus    2. Mars    3.Jupiter ");
+	System.out.println("	4. Saturn   5. Uranus  6. Neptune ");
 	System.out.println();
 
 	System.out.print("Please type in the number of the planet. Which planet are you visiting? ");
