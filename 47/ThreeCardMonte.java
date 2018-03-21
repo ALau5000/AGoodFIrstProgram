@@ -20,5 +20,51 @@ public class ThreeCardMonte {
         System.out.print("> ");
         guess = input.nextInt();
         
-        if (aceCard == guess) {
-            System.out.println("
+        if (guess != aceCard) {
+            if (aceCard == 1) {
+                System.out.println("\nHAHA! Eddie WINS!!! The card number was " + aceCard + ".\n");
+                System.out.println("        AA ## ##");
+                System.out.println("        AA ## ##");
+                System.out.println("        1  2  3\n");
+            } else if (aceCard == 2) {
+                System.out.println("\nHAHA! Eddie WINS!!! The card number was " + aceCard + ".\n");
+                System.out.println("        ## AA ##");
+                System.out.println("        ## AA ##");
+                System.out.println("        1  2  3\n");
+            } else if (aceCard == 3) {
+                System.out.println("\nHAHA! Eddie WINS!!! The card number was " + aceCard + ".\n");
+                System.out.println("        ## ## AA");
+                System.out.println("        ## ## AA");
+                System.out.println("        1  2  3\n");
+            }
+        }
+        
+        if (guess == aceCard) {
+            if (aceCard == 1) {
+                System.out.println("\nNice job! You got it! Eddie hands over your winnings and cries in a corner.\n");
+                System.out.println("        AA ## ##");
+                System.out.println("        AA ## ##");
+                System.out.println("        1  2  3\n");
+            } else if (aceCard == 2) {
+                System.out.println("\nNice job! You got it! Eddie hands over your winnings and cries in a corner.\n");
+                System.out.println("        ## AA ##");
+                System.out.println("        ## AA ##");
+                System.out.println("        1  2  3\n");
+            } else if (aceCard == 3) {
+                System.out.println("\nNice job! You got it! Eddie hands over your winnings and cries in a corner.\n");
+                System.out.println("        ## ## AA");
+                System.out.println("        ## ## AA");
+                System.out.println("        1  2  3\n");
+            }
+        }
+    }
+}
+        
+        
+        
+        
+        
+        
+        
+        
+        
