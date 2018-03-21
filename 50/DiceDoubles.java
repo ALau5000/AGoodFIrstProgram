@@ -21,6 +21,6 @@ public class DiceDoubles {
         System.out.println("HERE COME THE DICE ROLL!!!");
         System.out.println("DICE #1: " + dice1);
         System.out.println("DICE #2: " + dice2);
-        System.out.println("THE TOTAL IS: " + totalRoll + "!!!");e
+        System.out.println("THE TOTAL IS: " + totalRoll + "!!!");
     }
 }
