@@ -1,4 +1,4 @@
-public class Main {
+public class XandY {
   public static void main(String[] args) {
     System.out.println("x\t\ty");
     System.out.println("------------------------");
