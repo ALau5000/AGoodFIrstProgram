@@ -26,18 +26,21 @@ public class Main {
 	  System.out.print("Would you like to 'hit' or 'stay'?");
 	  String hitOrStay = input.next();
 	  
-	  //while ()
-	  while (hitOrStay.equals("hit")) {
-	    addCard = 2 + r.nextInt(11);
-	    total = card1 + card2 + addCard;
-	    System.out.println("You drew a " + addCard + ".");
-	    if (total > 21) {
-	      System.out.println("Your total is " + total + " which is higher than 21. YOU LOSE!");
-	    } else if (total < 21) {
-    	    System.out.println("Your total is " + total + ".\n");
-    	    System.out.println("Would you like to 'hit' or 'stay'?");
-    	    hitOrStay = input.next();
-	    }
+	  while (playerTotal <= 21) {
+  	  if (hitOrStay.equals("hit")) {
+        addCard = 2 + r.nextInt(11);
+  	    total = playerTotal + addCard;
+  	    playerTotal = total;
+  	    System.out.println("You drew a " + addCard + ".");
+  	    System.out.println("Your total is " + playerTotal + ".");
+  	  } else if (hitOrStay.equals("stay")) {
+  	    System.out.println("*");
+  	  } if (playerTotal > 21) {
+  	    System.out.println("That means your total is higher than 21! YOU LOSE!");
+  	  } else if (playerTotal <= 21) {
+    	  System.out.print("\nWould you like to 'hit' or 'stay'?");
+  	    hitOrStay = input.next();
+  	  }
 	  }
 	}
 }
