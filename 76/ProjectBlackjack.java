@@ -1,12 +1,12 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class ProjectBlackjack {
+public class Main {
 	public static void main(String[] args) throws Exception {
 	  Scanner input = new Scanner(System.in);
 	  Random r = new Random();
 	  
-	  int card1 = 2 + r.nextInt(10);
+	  int card1 = 2 + r.nextInt(1000);
 	  int card2 = 2 + r.nextInt(10);
 	  int playerTotal = card1 + card2;
 	  
@@ -24,23 +24,11 @@ public class ProjectBlackjack {
 	  System.out.println("Your total is " + playerTotal + ".\n");
 	  Thread.sleep(2000);
 	  
-	  if (playerTotal > 21 && dealerTotal < 21) {
-      System.out.println("\nHow unfortunate, your opening hand is higher than 21!");
-      Thread.sleep(3000);
-      System.out.println("\nDealer shows his cards, which is a " + card3 + " and a " + card4 + ".");
-      Thread.sleep(1000);
-      System.out.println("Dealer's total is " + dealerTotal + ". Dealer wins since his card total isn't higher than 21!");
-      Thread.sleep(3000);
-      System.exit(0);
-	  } if (playerTotal > 21 && dealerTotal > 21) {
-	      System.out.println("\nUnfortunate, your opening hand is higher than 21!");
-	      Thread.sleep(3000);
-	      System.out.println("\nDealer shows his cards, which is a " + card3 + " and a " + card4 + ".");
-	      Thread.sleep(1000);
-	      System.out.println("Dealer's total is " + dealerTotal + ". Dealer's total is also higher than 21.");
-	      Thread.sleep(3000);
-	      System.out.println("\nIt's a tie! No one wins!");
-	      System.exit(0);
+	  if (playerTotal > 21) {
+	    System.out.println("How unfortunate, your opening hand is over 21.");
+	    Thread.sleep(2000);
+	    System.out.println("Dealer Wins!");
+	    System.exit(0);
 	  }
 	  
 	  System.out.println("The dealer has a " + card3 + " showing, and a hidden card.");
@@ -76,11 +64,8 @@ public class ProjectBlackjack {
     System.out.println("His hidden card was a " + card4 + ".");
     System.out.println("His total was " + dealerTotal + ".");
     Thread.sleep(2000);
-    if (dealerTotal > 21) {
-      System.out.println("\nHow unfortunate for the dealer, his opening hand is higher than 21.");
-      System.out.println("He LOSES and YOU WIN!!!");
-      System.exit(0);
-    } if (dealerTotal >= 17) {
+    
+    if (dealerTotal >= 17) {
       Thread.sleep(2000);
       System.out.println("\nDealer decides to stay.");
       Thread.sleep(2000);
@@ -110,18 +95,14 @@ public class ProjectBlackjack {
     System.out.println("Your total is " + playerTotal + ".");
     Thread.sleep(2000);
     
-    while (dealerTotal <= 21) {
-      if (dealerTotal > playerTotal) {
-        System.out.println("\nSorry, dealer's total is higher, you lose. :(");
-        break;
-      } else if (playerTotal > dealerTotal) {
-        System.out.println("\nNice! Your total is higher! YOU WIN! :)");
-        break;
-      } else {
-        System.out.println("\nLooks like it's a tie. No one wins!");
-        break;
-      }
+    if (dealerTotal > playerTotal) {
+      System.out.println("\nSorry, dealer's total is higher, you lose. :(");
+    } else if (playerTotal > dealerTotal) {
+      System.out.println("\nNice! Your total is higher! YOU WIN! :)");
+    } else {
+      System.out.println("\nLooks like it's a tie. No one wins!");
     }
+
 	  
 	}
 }
