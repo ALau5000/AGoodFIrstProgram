@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class Main {
+public class ProjectBlackjack {
 	public static void main(String[] args) throws Exception {
 	  Scanner input = new Scanner(System.in);
 	  Random r = new Random();
